@@ -11,10 +11,6 @@ import com.example.administrator.syukkoweb.R;
 import com.example.administrator.syukkoweb.Util.Constants;
 import com.example.administrator.syukkoweb.Util.Util;
 
-/**
- * Created by Administrator on 2018/03/13.
- */
-
 public class UpdateDisplay extends Display{
     private EditText kokban_text;
     private TextView msg_text;
