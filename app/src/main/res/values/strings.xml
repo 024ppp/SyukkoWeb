@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">出庫</string>
+    <string name="action_settings">設定</string>
+    <string name="action_finish">終了</string>
+
+    <string name="kokban">工管No.</string>
+    <string name="hinban">品番</string>
+    <string name="lotno">ロットNo.</string>
+    <string name="carbon">カーボン</string>
+    <string name="cantag">缶タグ</string>
+    <string name="clear">クリア</string>
+    <string name="upd">登録</string>
+    <string name="finish">終了</string>
+
+    <string name="honsya">本社</string>
+    <string name="kouyo">広陽</string>
+    <string name="tamaki">玉城</string>
+</resources>

@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--項目名-->
+    <style name="style_title">
+        <item name="android:background">@drawable/frame_title</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--項目-->
+    <style name="style_item">
+        <item name="android:background">@drawable/frame_item</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/text_item</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <!--項目（左寄せ）-->
+    <style name="style_item_left" parent="style_item">
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!--項目（中央）-->
+    <style name="style_item_center" parent="style_item">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--項目（右寄せ）-->
+    <style name="style_item_right" parent="style_item">
+        <item name="android:gravity">right</item>
+    </style>
+
+
+    <!--出庫先関係-->
+    <style name="style_syukkosaki">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/text_item</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+</resources>

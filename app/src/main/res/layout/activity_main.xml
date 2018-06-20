@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.syukkoweb.View.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!--
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/style_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出庫先"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="53dp" />
+        -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="305dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdb1"
+            style="@style/style_syukkosaki"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/kouyo" />
+
+        <RadioButton
+            android:id="@+id/rdb2"
+            style="@style/style_syukkosaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tamaki" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/t1"
+        style="@style/style_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/kokban"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <com.example.administrator.syukkoweb.View.EditTextKokban
+        android:id="@+id/kokban_text"
+        style="@style/style_item_center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        tools:ignore="AndroidLintLabelFor" />
+
+    <TextView
+        android:id="@+id/msg_text"
+        android:layout_width="352dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kokban_text" />
+
+    <com.example.administrator.syukkoweb.View.ButtonFinish
+        android:id="@+id/clear_btn"
+        android:layout_width="175dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/finish"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg_text" />
+
+
+
+
+    <!--<com.example.administrator.syukkoweb.View.EditTextKokban-->
+    <!--android:id="@+id/editText"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="9dp"-->
+    <!--android:layout_marginTop="43dp"-->
+    <!--android:ems="10"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/l1"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/view" />-->
+
+</android.support.constraint.ConstraintLayout>
