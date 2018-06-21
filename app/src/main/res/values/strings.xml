@@ -11,6 +11,7 @@
     <string name="clear">クリア</string>
     <string name="upd">登録</string>
     <string name="finish">終了</string>
+    <string name="msg_str">工管番号をスキャンしてください。</string>
 
     <string name="honsya">本社</string>
     <string name="kouyo">広陽</string>

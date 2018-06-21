@@ -20,6 +20,7 @@ public final class Constants {
     public static final String URI_GET = "/WebAPI_Koyo_C/syukko/get/";
     public static final String URI_CHECK = "/WebAPI_Koyo_C/syukko/check/";
     public static final String URI_POST = "/WebAPI_Koyo_C/api/syukko";
+    public static final String URI_SERVER = "/WebAPI_Koyo_C/api/values";
 
     public static final String STR_TIMEOUT = "TIMEOUT";
     public static final String STR_SERVER_ERR = "SERVER_ERR";

@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.example.administrator.syukkoweb.AsyncTask.AbstractAsyncTask;
+import com.example.administrator.syukkoweb.AsyncTask.ConfirmServerTask;
 import com.example.administrator.syukkoweb.AsyncTask.UpdateProcessTask;
 import com.example.administrator.syukkoweb.Data.DataSyukko;
 import com.example.administrator.syukkoweb.R;
@@ -43,6 +44,17 @@ public class Util {
 
         //バイブ設定
         vib = (Vibrator) activity.getSystemService(VIBRATOR_SERVICE);
+    }
+
+    //起動時サーバーチェック
+    public static void confirmServerConnection() {
+        try {
+            String urlStr = createURI("SERVER");
+            ConfirmServerTask task = new ConfirmServerTask(activity, urlStr, "GET");
+            task.execute();
+        }
+        catch (Exception ex) {
+        }
     }
 
     //工管番号スキャン時本処理
@@ -146,6 +158,9 @@ public class Util {
                 break;
             case "POST":
                 uri += Constants.URI_POST;
+                break;
+            case "SERVER":
+                uri += Constants.URI_SERVER;
                 break;
             default:
                 uri = "";

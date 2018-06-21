@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Util使用準備
         Util.Set(this);
-        Util.showMessage(Constants.MSG_STR);
+        //サーバー通信チェック
+        Util.confirmServerConnection();
     }
 
     /*
